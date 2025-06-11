@@ -1,0 +1,16 @@
+{
+  "name": "olya",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@material-design-icons/font": "^0.14.15",
+    "sass": "^1.89.2",
+    "vite": "^6.3.5"
+  }
+}
