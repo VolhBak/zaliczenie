@@ -4,20 +4,19 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kaliop Poland - Profile</title>
+    <link rel="stylesheet" href="node_modules/@mdi/font/css/materialdesignicons.min.css">
+    <title>Kaliop Poland</title>
   </head>
   <body>
     <div id="app">
       <div class="profile-header">
         <div class="cover-photo">
-          <img src="https://placehold.co/1200x450/1877f2/ffffff/png" alt="Cover photo" class="cover-image">
+          <img src="/public/Key-visual-Hero-Home-scaled.jpg" alt="Cover photo" class="cover-image">
         </div>
-        
         <div class="profile-info">
           <div class="profile-logo">
-            <img src="https://placehold.co/168x168/1877f2/ffffff/png" alt="Kaliop Logo" class="logo-image">
+            <img src="/vite.svg" alt="Kaliop Logo" class="logo-image" style="background:#fff; padding:16px; border-radius:50%;">
           </div>
-          
           <div class="profile-details">
             <h2>Kaliop Poland</h2>
             <div class="profile-stats">
@@ -26,51 +25,75 @@
               <span>458 obserwujący</span>
             </div>
             <div class="profile-avatars">
-              <img src="https://placehold.co/32x32/1877f2/ffffff/png" alt="Avatar 1">
-              <img src="https://placehold.co/32x32/1877f2/ffffff/png" alt="Avatar 2">
-              <img src="https://placehold.co/32x32/1877f2/ffffff/png" alt="Avatar 3">
-              <img src="https://placehold.co/32x32/1877f2/ffffff/png" alt="Avatar 4">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Avatar 1">
+              <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Avatar 2">
+              <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Avatar 3">
+              <img src="https://randomuser.me/api/portraits/women/46.jpg" alt="Avatar 4">
             </div>
           </div>
         </div>
-
         <div class="action-bar">
           <div class="primary-actions">
-            <button class="btn btn-primary"><i>📨</i><span>Wyślij wiadomość</span></button>
-            <button class="btn btn-secondary"><i>👍</i><span>Lubisz to</span></button>
-            <button class="btn btn-secondary"><i>🔍</i><span>Szukaj</span></button>
+            <button class="btn btn-primary"><i class="mdi mdi-message"></i><span>Wyślij wiadomość</span></button>
+            <button class="btn btn-secondary"><i class="mdi mdi-thumb-up"></i><span>Lubisz to</span></button>
+            <button class="btn btn-secondary"><i class="mdi mdi-magnify"></i><span>Szukaj</span></button>
           </div>
         </div>
       </div>
-
       <nav class="profile-nav">
         <ul>
           <li class="active"><a href="#posts">Posty</a></li>
           <li><a href="#info">Informacje</a></li>
           <li><a href="#mentions">Wzmianki</a></li>
           <li class="mobile-hide"><a href="#ratings">Opinie</a></li>
-          <li class="mobile-hide"><a href="#followers">Obserwujący</a></li>
-          <li class="mobile-hide"><a href="#photos">Zdjęcia</a></li>
-          <li class="more-menu">
-            <button>Więcej</button>
-          </li>
         </ul>
       </nav>
-
       <div class="main-content">
-        <aside class="profile-sidebar">
-          <div class="info-card">
-            <h3>Prezentacja</h3>
-            <p>Dostawca rozwiązań IT dla biznesu. 20 lat doświadczeń na rynku, setki zrealizowanych projektów.</p>
-            <ul class="contact-info">
-              <li><i>💼</i>Strona • Usługi biznesowe</li>
-              <li><i>📍</i>Portowa 13B, Słupsk, Poland</li>
-              <li><i>📞</i>59 841 37 14</li>
-              <li><i>✉️</i>biuro@kaliop.pl</li>
-              <li><a href="https://kaliop.pl" class="website-link">🌐 kaliop.pl</a></li>
-            </ul>
+        <div class="presentation-section">
+          <div class="info-alert">
+            <span>Przełącz na stronę Kaliop Poland, aby zacząć nią zarządzać.</span>
+            <button class="btn btn-primary">Przełącz teraz</button>
           </div>
-        </aside>
+          <div class="info-card">
+            <h3><i class="mdi mdi-information"></i> Prezentacja</h3>
+            <p>Dostawca rozwiązań IT dla biznesu. 20 lat doświadczeń na rynku, setki zrealizowanych projektów.</p>
+            <ul class="company-details">
+              <li><i class="mdi mdi-domain"></i> Strona • Usługi biznesowe</li>
+              <li><i class="mdi mdi-map-marker"></i> Portowa 138, Słupsk, Poland</li>
+              <li><i class="mdi mdi-phone"></i> 59 841 37 14</li>
+              <li><i class="mdi mdi-email"></i> biuro@kaliop.pl</li>
+              <li><i class="mdi mdi-link"></i> <a href="#">kaliop.pl</a></li>
+              <li><button class="btn btn-secondary">Promuj witrynę</button></li>
+              <li style="color:#e53935"><i class="mdi mdi-close-circle"></i> Zamknięte teraz</li>
+            </ul>
+            <div style="color: #65676b; font-size: 0.9em; margin-top: 0.5em;">
+              <i class="mdi mdi-star-outline"></i> Jeszcze nie oceniono (0 opinii)
+            </div>
+          </div>
+        </div>
+        <div class="posts-section">
+          <div class="post-card">
+            <div class="post-header">
+              <img class="post-avatar" src="https://randomuser.me/api/portraits/men/32.jpg" alt="User">
+              <div>
+                <div class="post-author">Kaliop Poland</div>
+                <div class="post-date">11 czerwca 2025</div>
+              </div>
+            </div>
+            <div class="post-content">
+              <p>Nowy projekt w naszym biurze! Zobaczcie jak wygląda nasza sala konferencyjna po remoncie 🚀</p>
+              <div class="post-images">
+                <img src="https://picsum.photos/seed/1/400/220" alt="Post image 1">
+                <img src="https://picsum.photos/seed/2/400/220" alt="Post image 2">
+              </div>
+            </div>
+            <div class="post-actions">
+              <button class="btn btn-secondary"><i class="mdi mdi-thumb-up-outline"></i> Lubię to</button>
+              <button class="btn btn-secondary"><i class="mdi mdi-comment-outline"></i> Skomentuj</button>
+              <button class="btn btn-secondary"><i class="mdi mdi-share-outline"></i> Udostępnij</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <script type="module" src="/src/main.js"></script>

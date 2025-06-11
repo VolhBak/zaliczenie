@@ -12,5 +12,9 @@
     "@material-design-icons/font": "^0.14.15",
     "sass": "^1.89.2",
     "vite": "^6.3.5"
+  },
+  "dependencies": {
+    "@mdi/font": "^7.4.47",
+    "normalize.css": "^8.0.1"
   }
 }
